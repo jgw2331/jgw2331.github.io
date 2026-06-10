@@ -421,7 +421,7 @@ video {
 }
 
 .story-card--wide {
-  grid-column: span 8;
+  grid-column: span 6;
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
   align-items: center;
