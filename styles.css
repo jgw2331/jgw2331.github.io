@@ -441,11 +441,12 @@ video {
   gap: 1rem;
   padding: 1.25rem;
   border-radius: var(--radius-xl);
-  align-items: start;
+  align-items: stretch;
 }
 
 .media-panel__poster,
 .media-panel__video {
+  height: 100%;
   border-radius: 24px;
   overflow: hidden;
 }
@@ -454,7 +455,8 @@ video {
   position: relative;
   display: flex;
   align-items: flex-end;
-  min-height: 19rem;
+  height: 100%;
+  min-height: 24rem;
   padding: 1.25rem;
   border: 1px solid rgba(37, 99, 235, 0.14);
   background:
@@ -578,7 +580,7 @@ video {
   }
 
   .media-panel__placeholder {
-    min-height: 16rem;
+    min-height: 20rem;
   }
 
   .footer__info {
