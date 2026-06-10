@@ -432,24 +432,17 @@ video {
 
 .media-panel {
   display: grid;
-  grid-template-columns: 1.1fr 0.95fr 0.95fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
   padding: 1.25rem;
   border-radius: var(--radius-xl);
+  align-items: start;
 }
 
-.media-panel__copy,
 .media-panel__poster,
 .media-panel__video {
   border-radius: 24px;
   overflow: hidden;
-}
-
-.media-panel__copy {
-  padding: 1.4rem;
-  background:
-    linear-gradient(135deg, rgba(37, 99, 235, 0.12), rgba(255, 122, 24, 0.08)),
-    rgba(255, 255, 255, 0.56);
 }
 
 .media-panel__poster img,
@@ -457,7 +450,7 @@ video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  min-height: 24rem;
+  aspect-ratio: 4 / 3;
 }
 
 .footer {
@@ -518,7 +511,7 @@ video {
 
   .media-panel__poster img,
   .media-panel__video video {
-    min-height: 20rem;
+    aspect-ratio: 16 / 10;
   }
 
   .footer__info {
