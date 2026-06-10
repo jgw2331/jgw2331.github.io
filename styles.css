@@ -445,6 +445,32 @@ video {
   overflow: hidden;
 }
 
+.media-panel__placeholder {
+  display: grid;
+  place-items: center;
+  min-height: 19rem;
+  padding: 1.5rem;
+  border: 1px dashed rgba(37, 99, 235, 0.24);
+  background:
+    linear-gradient(135deg, rgba(37, 99, 235, 0.05), rgba(255, 122, 24, 0.04)),
+    rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+
+.media-panel__placeholder span {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: var(--text);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.media-panel__placeholder p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
 .media-panel__poster img,
 .media-panel__video video {
   width: 100%;
@@ -512,6 +538,10 @@ video {
   .media-panel__poster img,
   .media-panel__video video {
     aspect-ratio: 16 / 10;
+  }
+
+  .media-panel__placeholder {
+    min-height: 16rem;
   }
 
   .footer__info {
