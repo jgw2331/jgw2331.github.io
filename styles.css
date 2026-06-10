@@ -285,12 +285,12 @@ video {
 .device {
   position: relative;
   overflow: hidden;
-  border: 1px solid rgba(15, 23, 42, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.72);
   border-radius: 34px;
-  background: white;
+  background: rgba(255, 255, 255, 0.94);
   box-shadow:
-    0 22px 60px rgba(15, 23, 42, 0.12),
-    0 2px 8px rgba(15, 23, 42, 0.05);
+    0 22px 52px rgba(15, 23, 42, 0.1),
+    0 2px 8px rgba(15, 23, 42, 0.04);
 }
 
 .device::before {
@@ -301,7 +301,7 @@ video {
   width: 35%;
   height: 0.55rem;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.96);
   transform: translateX(-50%);
   z-index: 2;
 }
@@ -437,7 +437,7 @@ video {
   width: 100%;
   aspect-ratio: 390 / 844;
   object-fit: cover;
-  background: #eef2f7;
+  background: #fff;
 }
 
 .story-card--wide img {
