@@ -172,6 +172,11 @@ video {
   word-break: keep-all;
 }
 
+#showcase .section-heading h2 {
+  white-space: nowrap;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
 .hero h1 {
   font-size: clamp(2.55rem, 5.8vw, 4.35rem);
   max-width: 11ch;
@@ -555,6 +560,11 @@ video {
 
   .hero h1 {
     font-size: clamp(2.2rem, 13vw, 3.3rem);
+  }
+
+  #showcase .section-heading h2 {
+    white-space: normal;
+    font-size: clamp(1.8rem, 7vw, 2.5rem);
   }
 
   .hero__stats,
